@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mainmenu</name>
+    <events>
+        <variable constant="0" name="arcade" sid="841670085574070" static="0" type="number">0</variable>
+        <event-block sid="685026579003566">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="204796021662787" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Scroll to X" sid="179574435815603" type="System">
+                    <param id="0" name="X">360</param>
+                </action>
+                <action id="-6" name="Scroll to Y" sid="885370015789683" type="System">
+                    <param id="0" name="Y">640</param>
+                </action>
+                <action id="5" name="Check item exists" sid="233090957835484" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="122181202300150" title="UI_Animation">
+            <sub-events>
+                <event-block sid="857582311093750">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="872111792194173" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="573698148079984" type="mm_btnarcade">
+                            <param id="0" name="X">1000</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="792934074759648" type="mm_btnendless">
+                            <param id="0" name="X">1000</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="285903399934001" type="mm_player">
+                            <param id="0" name="Y">-200</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="970898182155786" type="mm_font_endless">
+                            <param id="0" name="X">1000</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="243963712102061" type="mm_font_arcade">
+                            <param id="0" name="X">1000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="711980225796561">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="252715111946671" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="688871992335169" type="mm_btnarcade">
+                            <param id="0" name="X">Self.X + (400 - Self.X) / 10</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="480306054115792" type="mm_btnendless">
+                            <param id="0" name="X">Self.X + (400 - Self.X) / 10</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="558236937160537" type="mm_font_endless">
+                            <param id="0" name="X">Self.X + (400 - Self.X) / 10</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="907337281302220" type="mm_player">
+                            <param id="0" name="Y">Self.Y + (550 - Self.Y) / 50</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="219601371585873" type="mm_font_arcade">
+                            <param id="0" name="X">Self.X + (400 - Self.X) / 10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="505383042017920" title="Button">
+            <sub-events>
+                <event-block sid="590654462568574">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="175020099100505" type="Touch">
+                            <param id="0" name="Object">mm_btnendless</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="455292859491455" type="System">
+                            <param id="0" name="Layout">maingame</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="889473948606105">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="308551160631168" type="Touch">
+                            <param id="0" name="Object">mm_btnarcade</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="265703010503703" type="System">
+                            <param id="0" name="Layout">mainarcade</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="534245201679000">
+            <conditions>
+                <condition id="10" name="On item missing" sid="527136249738510" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="708350707572395" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="821308927903670">
+            <conditions>
+                <condition id="9" name="On item exists" sid="810342770010690" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="494838637307033" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="554421080904263" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

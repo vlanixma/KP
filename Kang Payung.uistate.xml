@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">mainmenu</layout>
+        <layout order="3">maingame</layout>
+        <layout order="4">mainarcade</layout>
+        <layout order="6">3</layout>
+        <event-sheet order="1">mainmenu</event-sheet>
+        <event-sheet active="1" order="2">maingame</event-sheet>
+        <event-sheet order="5">mainarcade</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/main menu/" />
+        <folder expanded="1" path="object-folder/main game/" />
+        <folder expanded="1" path="object-folder/main arcade/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/level/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/mm_background/" />
+        <folder expanded="1" path="animation-folder/mm_btnendless/" />
+        <folder expanded="1" path="animation-folder/mm_btnarcade/" />
+        <folder expanded="1" path="animation-folder/mm_player/" />
+        <folder expanded="1" path="animation-folder/mg_player/" />
+        <folder expanded="1" path="animation-folder/mg_border/" />
+        <folder expanded="1" path="animation-folder/mg_spawnc/" />
+        <folder expanded="1" path="animation-folder/mg_spawnl/" />
+        <folder expanded="1" path="animation-folder/mg_spawnr/" />
+        <folder expanded="1" path="animation-folder/mg_ob1/" />
+        <folder expanded="1" path="animation-folder/mg_end/" />
+        <folder expanded="1" path="animation-folder/mg_gameover/" />
+        <folder expanded="1" path="animation-folder/mg_ob2/" />
+        <folder expanded="1" path="animation-folder/mg_ob3/" />
+        <folder expanded="1" path="animation-folder/mg_ob4/" />
+        <folder expanded="1" path="animation-folder/mg_ob5/" />
+        <folder expanded="1" path="animation-folder/mg_ob6/" />
+        <folder expanded="1" path="animation-folder/mg_ob7/" />
+        <folder expanded="1" path="animation-folder/mg_ob8/" />
+        <folder expanded="1" path="animation-folder/mg_ob9/" />
+        <folder expanded="1" path="animation-folder/mg_ob10/" />
+        <folder expanded="1" path="animation-folder/mg_ob11/" />
+        <folder expanded="1" path="animation-folder/mg_finish/" />
+        <folder expanded="1" path="animation-folder/mg_btn_back_arcade/" />
+        <folder expanded="1" path="animation-folder/mg_btn_next_arcade/" />
+        <folder expanded="1" path="animation-folder/mg_btn_retry_arcade/" />
+        <folder expanded="1" path="animation-folder/ma_background/" />
+        <folder expanded="1" path="animation-folder/ma_back/" />
+        <folder expanded="1" path="animation-folder/mg_mainmenu/" />
+        <folder expanded="1" path="animation-folder/mg_retry/" />
+        <folder expanded="1" path="animation-folder/MA_btn_level_lo/" />
+        <folder expanded="1" path="animation-folder/mg_next/" />
+        <folder expanded="1" path="animation-folder/Guide/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/mg_victory/" />
+    </folders-expanded>
+</c2uistate>

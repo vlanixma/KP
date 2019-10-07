@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Kang Payung</name>
+    <description>Kang Payung</description>
+    <version>1.0.3.8</version>
+    <author>Vlanixma</author>
+    <author-email>vlanixma@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.vlanixma.kangpayung</app-id>
+    <unique-id>3stfylghysnpi</unique-id>
+    <saved-with-version>26900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="main menu">
+            <object-type name="mm_background" sid="134195159509774">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162800866369067" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_background.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mm_btnendless" sid="803911655252861">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501105285580942" speed="5">
+                        <frame duration="1" hotspotX="0.501484" hotspotY="0.505618" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_button.png">
+                            <collision-poly>
+                                <point x="0.017646" y="0.235511" />
+                                <point x="0.982354" y="0.235511" />
+                                <point x="0.982354" y="1" />
+                                <point x="0.0205783" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mm_btnarcade" sid="444947731359596">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184865660690177" speed="5">
+                        <frame duration="1" hotspotX="0.501484" hotspotY="0.505618" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_button.png">
+                            <collision-poly>
+                                <point x="0.0177161" y="0" />
+                                <point x="0.988183" y="0" />
+                                <point x="0.988183" y="0.96503" />
+                                <point x="0.0206659" y="0.96503" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mm_player" sid="267595325805762">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293825276642585" speed="5">
+                        <frame duration="1" hotspotX="0.503268" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_Player.png">
+                            <collision-poly>
+                                <point x="0.176471" y="0.061086" />
+                                <point x="0.496732" y="0.00452489" />
+                                <point x="0.856209" y="0.0497738" />
+                                <point x="0.653595" y="0.5" />
+                                <point x="0.679739" y="0.88914" />
+                                <point x="0.496732" y="0.968326" />
+                                <point x="0.542484" y="0.812217" />
+                                <point x="0.0849673" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mm_font_endless" sid="474465460043351">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mm_font_arcade" sid="903539014455326">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="main game">
+            <object-type name="mg_background" sid="147316373307215">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MG_Background.png" />
+            </object-type>
+            <object-type name="mg_player" sid="235385134817637">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518159746194315" speed="5">
+                        <frame duration="1" hotspotX="0.503268" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_Player.png">
+                            <collision-poly>
+                                <point x="0.052288" y="0.133484" />
+                                <point x="0.69281" y="0.00452489" />
+                                <point x="0.941176" y="0.0837105" />
+                                <point x="1" y="0.914027" />
+                                <point x="0.699347" y="1" />
+                                <point x="0.470588" y="0.959276" />
+                                <point x="0.294118" y="0.64932" />
+                                <point x="0.0130719" y="0.592761" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="kiwo" pingpong="0" repeatcount="1" repeatto="0" sid="485146493087044" speed="5">
+                        <frame duration="1" hotspotX="0.503268" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_Player.png">
+                            <collision-poly>
+                                <point x="0.052288" y="0.133484" />
+                                <point x="0.69281" y="0.00452489" />
+                                <point x="0.941176" y="0.0837105" />
+                                <point x="1" y="0.914027" />
+                                <point x="0.699347" y="1" />
+                                <point x="0.470588" y="0.959276" />
+                                <point x="0.294118" y="0.64932" />
+                                <point x="0.0130719" y="0.592761" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="tengen" pingpong="0" repeatcount="1" repeatto="0" sid="457043725463169" speed="5">
+                        <frame duration="1" hotspotX="0.183007" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.986928" y="0.592761" />
+                                <point x="0.705882" y="0.64932" />
+                                <point x="0.529412" y="0.959276" />
+                                <point x="0.300653" y="1" />
+                                <point x="0" y="0.914027" />
+                                <point x="0.0588237" y="0.0837105" />
+                                <point x="0.30719" y="0.00452489" />
+                                <point x="0.947712" y="0.133484" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_border" sid="480085048826036">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372009436656053" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_spawnc" sid="448559178604226">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108140753037902" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_spawnl" sid="984233221029198">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720724187617463" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_spawnr" sid="136879380466682">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284808840445480" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob1" sid="342236633135999">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="374664846035885">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799983595939667" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceRockets_004.png">
+                            <collision-poly>
+                                <point x="0.837398" y="0.242647" />
+                                <point x="1" y="0.485294" />
+                                <point x="0.842818" y="0.75" />
+                                <point x="0.279133" y="0.75" />
+                                <point x="0.140922" y="1" />
+                                <point x="0.0487806" y="1" />
+                                <point x="0" y="0.713235" />
+                                <point x="0" y="0.308824" />
+                                <point x="0.0542004" y="0.00735294" />
+                                <point x="0.146341" y="0" />
+                                <point x="0.284553" y="0.275735" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_end" sid="338259348836720">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296004601122489" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_gameover" sid="881114377298595">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424122968721108" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mg_gameover.png">
+                            <collision-poly>
+                                <point x="0.0260417" y="0.0167411" />
+                                <point x="0.5" y="0" />
+                                <point x="0.973958" y="0.0167411" />
+                                <point x="1" y="0.5" />
+                                <point x="0.973958" y="0.983259" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0260417" y="0.983259" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_score" sid="460779592341865">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_ob2" sid="381784191166621">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="289122210826831">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161424770162682" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.503185" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceRockets_002.png">
+                            <collision-poly>
+                                <point x="0.838188" y="0.318471" />
+                                <point x="1" y="0.496815" />
+                                <point x="0.834951" y="0.675159" />
+                                <point x="0.132686" y="0.738854" />
+                                <point x="0" y="0.496815" />
+                                <point x="0.12945" y="0.254777" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob3" sid="475963714943954">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="245269170830227">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286641226376479" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceRockets_001.png">
+                            <collision-poly>
+                                <point x="0.45693" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="0.456333" y="0" />
+                                <point x="0.78877" y="0.204918" />
+                                <point x="1" y="0.519643" />
+                                <point x="0.794118" y="0.801581" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob4" sid="311521509861554">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="268525632600889">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339725617361660" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceRockets_003.png">
+                            <collision-poly>
+                                <point x="0" y="0.245066" />
+                                <point x="0.193651" y="0.00847458" />
+                                <point x="0.666667" y="0" />
+                                <point x="1" y="0.507181" />
+                                <point x="0.644444" y="0.991525" />
+                                <point x="0.185119" y="1" />
+                                <point x="0.0031746" y="0.811067" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_score_end" sid="998381940331514">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_bestscore_end" sid="434586280534814">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_ob5" sid="420145809960312">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="663340535060144">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949616887211158" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceShips_007.png">
+                            <collision-poly>
+                                <point x="1" y="0.135511" />
+                                <point x="1" y="0.875969" />
+                                <point x="0.234541" y="1" />
+                                <point x="0" y="0.994186" />
+                                <point x="0" y="0" />
+                                <point x="0.215423" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob6" sid="770048815088883">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="684178257718726">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143831596943454" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\spaceShips_004.png">
+                            <collision-poly>
+                                <point x="1" y="0.866045" />
+                                <point x="0.41746" y="1" />
+                                <point x="0" y="0.865079" />
+                                <point x="0" y="0.492819" />
+                                <point x="0" y="0.174603" />
+                                <point x="0.3334" y="0" />
+                                <point x="1" y="0.133377" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob7" sid="478125963072679">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="263940714576337">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="181878128908452" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\shipPink_manned.png">
+                            <collision-poly>
+                                <point x="0.245066" y="1" />
+                                <point x="0.00847501" y="0.806349" />
+                                <point x="0" y="0.333333" />
+                                <point x="0.507181" y="0" />
+                                <point x="0.991525" y="0.355556" />
+                                <point x="1" y="0.814881" />
+                                <point x="0.811067" y="0.996825" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob8" sid="128937286513182">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="449180309629265">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="698629597122952" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\shipYellow_manned.png">
+                            <collision-poly>
+                                <point x="0" y="0.245066" />
+                                <point x="0.193651" y="0.00847501" />
+                                <point x="0.666667" y="0" />
+                                <point x="1" y="0.507181" />
+                                <point x="0.644444" y="0.991525" />
+                                <point x="0.185119" y="1" />
+                                <point x="0.00317502" y="0.811067" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob9" sid="335499619555162">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="718666493186838">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474891636291248" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\brickBlack03.png">
+                            <collision-poly>
+                                <point x="0.754934" y="0" />
+                                <point x="0.991525" y="0.193651" />
+                                <point x="1" y="0.666667" />
+                                <point x="0.492819" y="1" />
+                                <point x="0.00847501" y="0.644444" />
+                                <point x="0" y="0.185119" />
+                                <point x="0.188933" y="0.00317502" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob10" sid="849872232322422">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="925023518728880">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118205628648039" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.125" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\brickBlack15.png">
+                            <collision-poly>
+                                <point x="1" y="0.754934" />
+                                <point x="0.806349" y="0.991525" />
+                                <point x="0.333333" y="1" />
+                                <point x="0" y="0.492819" />
+                                <point x="0.355556" y="0.00847501" />
+                                <point x="0.814881" y="0" />
+                                <point x="0.996825" y="0.188933" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_ob11" sid="997074839379000">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="101412545916053">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955892853666966" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.875" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\brickBlack11.png">
+                            <collision-poly>
+                                <point x="1" y="0.754934" />
+                                <point x="0.806349" y="0.991525" />
+                                <point x="0.333333" y="1" />
+                                <point x="0" y="0.492819" />
+                                <point x="0.355556" y="0.00847501" />
+                                <point x="0.814881" y="0" />
+                                <point x="0.996825" y="0.188933" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_score_end_var" sid="580125056516651">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_bestscore_end_var" sid="367454547056526">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_ui_retry" sid="132056901391875">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_ui_mainmenu" sid="532849069874046">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\kp\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_finish" sid="759534986988724">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807658799263701" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mg_gameover.png">
+                            <collision-poly>
+                                <point x="0.0260417" y="0.0167411" />
+                                <point x="0.5" y="0" />
+                                <point x="0.973958" y="0.0167411" />
+                                <point x="1" y="0.5" />
+                                <point x="0.973958" y="0.983259" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0260417" y="0.983259" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_btn_back_arcade" sid="890280705619510">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231225439321150" speed="5">
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.504673" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                                <point x="0.488189" y="0" />
+                                <point x="0.913386" y="0" />
+                                <point x="0" y="0.654206" />
+                                <point x="0" y="1" />
+                                <point x="0.149606" y="0.654206" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_btn_next_arcade" sid="854659175108251">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266920062411257" speed="5">
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.504673" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                            <collision-poly>
+                                <point x="0.511811" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.850394" y="0.654206" />
+                                <point x="1" y="1" />
+                                <point x="1" y="0.654206" />
+                                <point x="0.0866142" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_btn_retry_arcade" sid="995240916127334">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919300050321542" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="main arcade">
+            <object-type name="ma_background" sid="852083900823396">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746811595702272" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_background.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ma_back" sid="276465328057384">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827351554988729" speed="5">
+                        <frame duration="1" hotspotX="0.501618" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mm_back.png">
+                            <collision-poly>
+                                <point x="0.315389" y="0.222785" />
+                                <point x="1" y="0.00406504" />
+                                <point x="1" y="0.115969" />
+                                <point x="1" y="0.884031" />
+                                <point x="1" y="0.990849" />
+                                <point x="0.322649" y="0.772128" />
+                                <point x="0.00323625" y="0.497457" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_mainmenu" sid="791045990957422">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486857802825487" speed="5">
+                        <frame duration="1" hotspotX="0.503937" hotspotY="0.504673" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0" y="0" />
+                                <point x="0.966637" y="0" />
+                                <point x="0.966637" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mg_retry" sid="563939080023080">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406786855845691" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MG_button.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.807692" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.948714" />
+                                <point x="0.807692" y="0.989474" />
+                                <point x="0" y="0.948714" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MA_btn_level_lo" sid="834793467521252">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="lev" sid="970624055907335" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146511229128554" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_btn_level_un.png">
+                            <collision-poly>
+                                <point x="0.03" y="0.029703" />
+                                <point x="0.5" y="0" />
+                                <point x="0.97" y="0.029703" />
+                                <point x="1" y="0.49505" />
+                                <point x="0.96" y="0.960396" />
+                                <point x="0.5" y="0.990099" />
+                                <point x="0.04" y="0.960396" />
+                                <point x="0" y="0.49505" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_btn_level_lo.png">
+                            <collision-poly>
+                                <point x="0.03" y="0.03" />
+                                <point x="0.5" y="0" />
+                                <point x="0.97" y="0.03" />
+                                <point x="1" y="0.5" />
+                                <point x="0.97" y="0.97" />
+                                <point x="0.5" y="1" />
+                                <point x="0.03" y="0.97" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MA_level_text" sid="232384695446755">
+                <plugin id="SpriteFontPlus" />
+                <texture original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\SpriteFont_BadaBoomBB_Regular_(72)_[0,0,0]_84x90.png" />
+            </object-type>
+            <object-type name="mg_next" sid="814963441305460">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528095371854667" speed="5">
+                        <frame duration="1" hotspotX="0.496063" hotspotY="0.504673" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0.033363" y="1" />
+                                <point x="0.033363" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Guide" sid="190762744348371">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909019113027017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="609325020697752">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="LocalStorage" sid="825982323144981">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Sprite" sid="789853057913060">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266228377428296" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="657558751948955">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="mg_victory" sid="760676349462760">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222367294514231" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MA_button.png">
+                        <collision-poly>
+                            <point x="0.131068" y="0.258964" />
+                            <point x="0.5" y="0.00398406" />
+                            <point x="0.868932" y="0.258964" />
+                            <point x="1" y="1" />
+                            <point x="0.339806" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.660194" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="level">
+            <layout>1.xml</layout>
+            <layout>2.xml</layout>
+            <layout>3.xml</layout>
+            <layout>4.xml</layout>
+            <layout>5.xml</layout>
+            <layout>6.xml</layout>
+            <layout>7.xml</layout>
+            <layout>8.xml</layout>
+            <layout>9.xml</layout>
+        </layout-folder>
+        <layout>mainmenu.xml</layout>
+        <layout>mainarcade.xml</layout>
+        <layout>maingame.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>mainmenu.xml</event-sheet>
+        <event-sheet>maingame.xml</event-sheet>
+        <event-sheet>mainarcade.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="16" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
