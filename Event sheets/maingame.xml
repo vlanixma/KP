@@ -719,6 +719,7 @@
                                     <param id="0" name="Text">&quot;&quot;&amp;bestscore</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="884300432969012" type="mg_victory" />
+                                <action id="-9" name="Destroy" sid="415707502158231" type="mg_next" />
                             </actions>
                             <sub-events>
                                 <event-block sid="497567297865789">
@@ -817,6 +818,18 @@
                                         <action id="-25" name="Go to layout (by name)" sid="267320291046602" type="System">
                                             <param id="0" name="Layout">str(clevel)</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="754037683819940" type="System">
+                                            <param id="0" name="Variable">arcade</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="944166677521296" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="750298543243685" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -849,7 +862,7 @@
                                 <condition id="-14" name="Compare variable" sid="649623568259973" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">10</param>
+                                    <param id="2" name="Value">20</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="608199721947468" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -877,7 +890,7 @@
                                 <condition id="-14" name="Compare variable" sid="159401740514590" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">11</param>
+                                    <param id="2" name="Value">40</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="762802560407013" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -905,7 +918,7 @@
                                 <condition id="-14" name="Compare variable" sid="775627131388169" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">12</param>
+                                    <param id="2" name="Value">60</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="847191982816218" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -933,7 +946,7 @@
                                 <condition id="-14" name="Compare variable" sid="263445303627432" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">13</param>
+                                    <param id="2" name="Value">80</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="614188834371253" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -961,7 +974,7 @@
                                 <condition id="-14" name="Compare variable" sid="372568697692579" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">14</param>
+                                    <param id="2" name="Value">90</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="516596917665102" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -989,7 +1002,7 @@
                                 <condition id="-14" name="Compare variable" sid="232517685434853" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">15</param>
+                                    <param id="2" name="Value">100</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="610332249175241" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -1017,7 +1030,7 @@
                                 <condition id="-14" name="Compare variable" sid="839066306171675" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">16</param>
+                                    <param id="2" name="Value">120</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="862167110052928" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -1045,7 +1058,7 @@
                                 <condition id="-14" name="Compare variable" sid="898521388300238" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">17</param>
+                                    <param id="2" name="Value">140</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="943744645439098" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -1073,7 +1086,7 @@
                                 <condition id="-14" name="Compare variable" sid="496130230429999" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">18</param>
+                                    <param id="2" name="Value">160</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="483345678302880" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -1101,7 +1114,7 @@
                                 <condition id="-14" name="Compare variable" sid="891460408605729" type="System">
                                     <param id="0" name="Variable">score</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">19</param>
+                                    <param id="2" name="Value">180</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="906854106997641" type="System">
                                     <param id="0" name="Variable">clevel</param>
@@ -1145,9 +1158,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="784664792990447" type="System">
+                                                <action id="-9" name="Set value" sid="189491779835708" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1160,9 +1173,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="877329026336743" type="System">
+                                                <action id="-9" name="Set value" sid="535397036179856" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1175,9 +1188,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="701380132725514" type="System">
+                                                <action id="-9" name="Set value" sid="184807830858832" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1190,9 +1203,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="797925671611666" type="System">
+                                                <action id="-9" name="Set value" sid="929195737462133" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1205,9 +1218,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="572026766081395" type="System">
+                                                <action id="-9" name="Set value" sid="247687503984359" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1220,9 +1233,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="511149308961469" type="System">
+                                                <action id="-9" name="Set value" sid="688989291093154" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1235,9 +1248,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="648545824767182" type="System">
+                                                <action id="-9" name="Set value" sid="876590752595865" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1250,9 +1263,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="464185914653169" type="System">
+                                                <action id="-9" name="Set value" sid="508810481665687" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1265,9 +1278,9 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Set value" sid="733020499571581" type="System">
+                                                <action id="-9" name="Set value" sid="804574161607101" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">1</param>
+                                                    <param id="1" name="Value">round(random(1,16))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1407,6 +1420,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="301218150892810" title="Level" />
     </events>
 </c2eventsheet>
