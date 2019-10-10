@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>maingame</name>
     <events>
+        <variable constant="0" name="kebal" sid="160750083642256" static="0" type="number">0</variable>
         <variable constant="0" name="escore" sid="767351434939879" static="0" type="number">0</variable>
         <variable constant="0" name="finish" sid="149734891975736" static="0" type="number">0</variable>
         <variable constant="0" name="endless" sid="128763826261322" static="0" type="number">0</variable>
@@ -18,6 +19,7 @@
                 <event-block sid="809835418024492">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="584039173057663" type="System" />
+                        <condition id="-1" name="Every tick" sid="236866529199055" type="System" />
                     </conditions>
                     <actions>
                         <action id="-5" name="Scroll to X" sid="543739484400984" type="System">
@@ -44,9 +46,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="173693519414969">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="236866529199055" type="System" />
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-2" name="Set Y" sid="776068183464409" type="mg_background">
                             <param id="0" name="Y">mg_background.Y - bg_speed * dt</param>
@@ -434,6 +434,102 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="651722478794875">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="720532854867406" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">17</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="921209610727756" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob8</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="154143535074306">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="496163546645999" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">18</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="376923994376397" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob8</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="159116722720801">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="497273081396742" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">19</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="187925538049191" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob8</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="844364577835126">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="155484983722438" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="749748394322796" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob12</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="481012401857464">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="473350492756606" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">21</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="386566903782278" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob12</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="611710796797543">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="917960534782247" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">22</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="829424144119517" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob12</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
@@ -449,9 +545,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="854568470475801" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="836588732847698" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -462,9 +558,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="948760603243139" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="827755944903412" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -475,9 +571,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="384402002437264" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="992814273475889" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -488,9 +584,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="901672048975049" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="440752996987979" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -501,9 +597,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="595304640947930" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="888560708223438" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -514,9 +610,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="767703403335318" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="408371798665601" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -527,9 +623,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="539459012064649" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="916634160759004" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -540,9 +636,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="651868258372188" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="331588605684096" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -553,9 +649,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="381446240618958" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="668459997584660" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -566,9 +662,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="465139285762612" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="755147553451122" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -579,9 +675,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="682107374529873" type="System">
-                                            <param id="0" name="Variable">mati</param>
-                                            <param id="1" name="Value">1</param>
+                                        <action id="0" name="Call function" sid="937391574572264" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -592,10 +688,24 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="522835019359944" type="System">
-                                            <param id="0" name="Variable">mati</param>
+                                        <action id="0" name="Call function" sid="822827470964464" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="480632396936500">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="674635621868319" type="mg_player">
+                                            <param id="0" name="Object">mg_ob12</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="878191561505306" type="System">
+                                            <param id="0" name="Variable">kebal</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-9" name="Destroy" sid="472556188118960" type="mg_ob12" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -838,305 +948,309 @@
                 </event-group>
                 <event-group description="" sid="156588322257235" title="Game Level">
                     <sub-events>
-                        <event-block sid="409519382041879">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="673648417410046" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">level</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="948053327988241" type="System">
-                                    <param id="0" name="Variable">level</param>
-                                    <param id="1" name="Value">clevel</param>
-                                </action>
-                                <action id="0" name="Set item" sid="958565724253577" type="LocalStorage">
-                                    <param id="0" name="Key">&quot;level&quot;</param>
-                                    <param id="1" name="Value">level</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="555094991045492">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="649623568259973" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">20</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="608199721947468" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="614170539854297" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="735889441764805" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="688984529449102" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="397428394081850">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="159401740514590" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">40</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="762802560407013" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="583944224988900" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="278809769047168" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="695427113866000" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="121014678455693">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="775627131388169" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">60</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="847191982816218" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="711451883006567" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="130982952883064" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="714586875349623" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="950996693654688">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="263445303627432" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">80</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="614188834371253" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">4</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="816982912514958" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="933690375329023" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="387522844164226" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="741656812405771">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="372568697692579" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">90</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="516596917665102" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="663696297379528" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="324187448007688" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="180168745416070" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="723705827591667">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="232517685434853" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">100</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="610332249175241" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">6</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="703693106686794" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="774504985207452" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="318170544825727" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="588784027465917">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="839066306171675" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">120</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="862167110052928" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">7</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="775128690100442" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="514909003837760" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="371588958246876" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="743127673183544">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="898521388300238" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">140</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="943744645439098" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">8</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="284395580219501" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="368002641229272" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="953839789167191" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="648624565016323">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="496130230429999" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">160</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="483345678302880" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">9</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="664809999385734" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="119040595814674" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="754856876734331" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="783929803536993">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="891460408605729" type="System">
-                                    <param id="0" name="Variable">score</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">180</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="906854106997641" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">10</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="163541774250402" type="System">
-                                    <param id="0" name="Variable">mati</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="892847388310989" type="System">
-                                    <param id="0" name="Variable">finish</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="751659287708202" type="System">
-                                    <param id="0" name="Variable">clevel</param>
-                                    <param id="1" name="Value">clevel + 1</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        <event-group description="" sid="680433146792460" title="Finish">
+                            <sub-events>
+                                <event-block sid="409519382041879">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="673648417410046" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">level</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="948053327988241" type="System">
+                                            <param id="0" name="Variable">level</param>
+                                            <param id="1" name="Value">clevel</param>
+                                        </action>
+                                        <action id="0" name="Set item" sid="958565724253577" type="LocalStorage">
+                                            <param id="0" name="Key">&quot;level&quot;</param>
+                                            <param id="1" name="Value">level</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="555094991045492">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="649623568259973" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="608199721947468" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="614170539854297" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="735889441764805" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="688984529449102" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="397428394081850">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="159401740514590" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="762802560407013" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="583944224988900" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="278809769047168" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="695427113866000" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="121014678455693">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="775627131388169" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">60</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="847191982816218" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="711451883006567" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="130982952883064" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="714586875349623" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="950996693654688">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="263445303627432" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">80</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="614188834371253" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="816982912514958" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="933690375329023" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="387522844164226" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="741656812405771">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="372568697692579" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">90</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="516596917665102" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="663696297379528" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="324187448007688" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="180168745416070" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="723705827591667">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="232517685434853" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">100</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="610332249175241" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="703693106686794" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="774504985207452" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="318170544825727" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="588784027465917">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="839066306171675" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">120</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="862167110052928" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="775128690100442" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="514909003837760" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="371588958246876" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="743127673183544">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="898521388300238" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">140</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="943744645439098" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="284395580219501" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="368002641229272" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="953839789167191" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="648624565016323">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="496130230429999" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">160</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="483345678302880" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="664809999385734" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="119040595814674" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="754856876734331" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="783929803536993">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="891460408605729" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">180</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="906854106997641" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="163541774250402" type="System">
+                                            <param id="0" name="Variable">mati</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="892847388310989" type="System">
+                                            <param id="0" name="Variable">finish</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="751659287708202" type="System">
+                                            <param id="0" name="Variable">clevel</param>
+                                            <param id="1" name="Value">clevel + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                         <event-group description="" sid="764941171978533" title="Arcade">
                             <sub-events>
                                 <event-block sid="156887252375755">
@@ -1160,7 +1274,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="189491779835708" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1175,7 +1289,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="535397036179856" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1190,7 +1304,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="184807830858832" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1205,7 +1319,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="929195737462133" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1220,7 +1334,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="247687503984359" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1235,7 +1349,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="688989291093154" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1250,7 +1364,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="876590752595865" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1265,7 +1379,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="508810481665687" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1280,7 +1394,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="804574161607101" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,16))</param>
+                                                    <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1301,7 +1415,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="289904802068179" type="System">
                                             <param id="0" name="Variable">object</param>
-                                            <param id="1" name="Value">round(random(1,16))</param>
+                                            <param id="1" name="Value">round(random(1,22))</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1420,5 +1534,48 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="305191533101155">
+            <conditions>
+                <condition id="0" name="On function" sid="868622025525013" type="Function">
+                    <param id="0" name="Name">&quot;kebal&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="262144637376773" type="System">
+                    <param id="0" name="Variable">kebal</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="505213578035105" type="System">
+                    <param id="0" name="Variable">mati</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="316637785845323" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="235102449792784" type="System">
+                    <param id="0" name="Variable">kebal</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913639933381984">
+            <conditions>
+                <condition id="0" name="On function" sid="277157333861176" type="Function">
+                    <param id="0" name="Name">&quot;kebal&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="611636421559204" type="System">
+                    <param id="0" name="Variable">kebal</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="586471279174924" type="System">
+                    <param id="0" name="Variable">mati</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

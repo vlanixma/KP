@@ -10,13 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">mainmenu</layout>
+        <layout order="0">mainmenu</layout>
         <layout order="3">maingame</layout>
         <layout order="4">mainarcade</layout>
-        <layout order="6">3</layout>
         <event-sheet order="1">mainmenu</event-sheet>
-        <event-sheet order="2">maingame</event-sheet>
-        <event-sheet order="5">mainarcade</event-sheet>
+        <event-sheet order="2">mainarcade</event-sheet>
+        <event-sheet active="1" order="5">maingame</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,6 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/main game/" />
         <folder expanded="1" path="object-folder/main arcade/" />
         <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/eMenu/" />
         <folder expanded="0" path="layout-folder/level/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -72,5 +72,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Guide/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/mg_victory/" />
+        <folder expanded="1" path="animation-folder/mg_ob12/" />
     </folders-expanded>
 </c2uistate>

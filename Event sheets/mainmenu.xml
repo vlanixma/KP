@@ -15,7 +15,7 @@
                 <action id="-6" name="Scroll to Y" sid="885370015789683" type="System">
                     <param id="0" name="Y">640</param>
                 </action>
-                <action id="5" name="Check item exists" sid="233090957835484" type="LocalStorage">
+                <action id="5" name="Check item exists" sid="128622855106008" type="LocalStorage">
                     <param id="0" name="Key">&quot;level&quot;</param>
                 </action>
             </actions>
@@ -94,32 +94,32 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="191681741782961">
+                    <conditions>
+                        <condition id="10" name="On item missing" sid="783074560075671" type="LocalStorage">
+                            <param id="0" name="Key">&quot;level&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set item" sid="476431863771964" type="LocalStorage">
+                            <param id="0" name="Key">&quot;level&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="534245201679000">
+        <event-block sid="154139533691395">
             <conditions>
-                <condition id="10" name="On item missing" sid="527136249738510" type="LocalStorage">
+                <condition id="9" name="On item exists" sid="832343030941986" type="LocalStorage">
                     <param id="0" name="Key">&quot;level&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set item" sid="708350707572395" type="LocalStorage">
-                    <param id="0" name="Key">&quot;level&quot;</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="821308927903670">
-            <conditions>
-                <condition id="9" name="On item exists" sid="810342770010690" type="LocalStorage">
-                    <param id="0" name="Key">&quot;level&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Get item" sid="494838637307033" type="LocalStorage">
+                <action id="1" name="Get item" sid="425403768172953" type="LocalStorage">
                     <param id="0" name="Key">&quot;level&quot;</param>
                 </action>
-                <action id="-9" name="Set value" sid="554421080904263" type="System">
+                <action id="-9" name="Set value" sid="448233049187265" type="System">
                     <param id="0" name="Variable">level</param>
                     <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>

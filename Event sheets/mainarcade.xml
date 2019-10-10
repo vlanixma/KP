@@ -15,6 +15,9 @@
                 <action id="-6" name="Scroll to Y" sid="887957004775986" type="System">
                     <param id="0" name="Y">640</param>
                 </action>
+                <action id="5" name="Check item exists" sid="965168288364686" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="437976455746352">
@@ -92,6 +95,35 @@
                 <action id="-9" name="Set value" sid="147511782019329" type="System">
                     <param id="0" name="Variable">finish</param>
                     <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="871138440131327">
+            <conditions>
+                <condition id="10" name="On item missing" sid="106948229522093" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="840999303426045" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="468859621630870">
+            <conditions>
+                <condition id="9" name="On item exists" sid="782833609534838" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="595096696686285" type="LocalStorage">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="850275590441659" type="System">
+                    <param id="0" name="Variable">level</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
                 </action>
             </actions>
         </event-block>

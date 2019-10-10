@@ -2,7 +2,7 @@
 <c2project>
     <name>Kang Payung</name>
     <description>Kang Payung</description>
-    <version>1.0.5.5</version>
+    <version>1.0.5.8</version>
     <author>Vlanixma</author>
     <author-email>vlanixma@gmail.com</author-email>
     <author-website>http://</author-website>
@@ -11,6 +11,7 @@
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
@@ -597,7 +598,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746811595702272" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_background.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_background.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -753,9 +754,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="905525465785969">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="mg_ob12" sid="686199653581671">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="719883387738637">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582611534223123" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="eMenu">
+            <layout>mainmenu.xml</layout>
+            <layout>mainarcade.xml</layout>
+        </layout-folder>
         <layout-folder name="level">
             <layout>1.xml</layout>
             <layout>2.xml</layout>
@@ -767,14 +788,13 @@
             <layout>8.xml</layout>
             <layout>9.xml</layout>
         </layout-folder>
-        <layout>mainmenu.xml</layout>
-        <layout>mainarcade.xml</layout>
         <layout>maingame.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>mainmenu.xml</event-sheet>
         <event-sheet>maingame.xml</event-sheet>
         <event-sheet>mainarcade.xml</event-sheet>
+        <event-sheet>levelstorage.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="3">
@@ -783,6 +803,7 @@
             </properties>
         </global-instance>
         <global-instance type="LocalStorage" uid="16" />
+        <global-instance type="Function" uid="332" />
     </global-instances>
     <sounds-folder />
     <music-folder />

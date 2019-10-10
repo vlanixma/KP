@@ -11,7 +11,7 @@
         <horizontal>720</horizontal>
         <vertical>1280</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
         <layer name="Background" sid="204455117260585">
             <initially-visible>1</initially-visible>
