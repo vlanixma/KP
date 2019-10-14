@@ -19,7 +19,6 @@
                 <event-block sid="809835418024492">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="584039173057663" type="System" />
-                        <condition id="-1" name="Every tick" sid="236866529199055" type="System" />
                     </conditions>
                     <actions>
                         <action id="-5" name="Scroll to X" sid="543739484400984" type="System">
@@ -46,7 +45,9 @@
                     </actions>
                 </event-block>
                 <event-block sid="173693519414969">
-                    <conditions />
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="236866529199055" type="System" />
+                    </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="776068183464409" type="mg_background">
                             <param id="0" name="Y">mg_background.Y - bg_speed * dt</param>
@@ -729,7 +730,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="235877217075078" type="mg_ob1" />
+                                        <action id="-9" name="Destroy" sid="235877217075078" type="mg_ob2" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="826627171360101">
@@ -739,7 +740,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="867422877187521" type="mg_ob1" />
+                                        <action id="-9" name="Destroy" sid="867422877187521" type="mg_ob3" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="859385500800992">
@@ -749,7 +750,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="273955086286129" type="mg_ob1" />
+                                        <action id="-9" name="Destroy" sid="273955086286129" type="mg_ob4" />
                                     </actions>
                                 </event-block>
                                 <event-block sid="181826613980854">
@@ -759,7 +760,77 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="587103871825568" type="mg_ob1" />
+                                        <action id="-9" name="Destroy" sid="587103871825568" type="mg_ob5" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="140029908934257">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="322597890361758" type="mg_ob6">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="462396582526328" type="mg_ob6" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="535589938763603">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="767254224544206" type="mg_ob7">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="562859083812966" type="mg_ob7" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="111042308756318">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="138782203491265" type="mg_ob8">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="332417638173045" type="mg_ob8" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="995231532520397">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="500298106833237" type="mg_ob9">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="117949080021851" type="mg_ob9" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="812774332366030">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="911982501095039" type="mg_ob10">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="176273863760598" type="mg_ob10" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="659668442422399">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="206028691290337" type="mg_ob11">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="358631104612073" type="mg_ob11" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="991037323157029">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="495492517362402" type="mg_ob12">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="269363095739608" type="mg_ob12" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -1378,21 +1449,6 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Set value" sid="508810481665687" type="System">
-                                                    <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="828393912457660">
-                                            <conditions>
-                                                <condition id="-14" name="Compare variable" sid="910101631869419" type="System">
-                                                    <param id="0" name="Variable">level</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">10</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="804574161607101" type="System">
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
