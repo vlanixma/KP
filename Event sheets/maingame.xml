@@ -8,7 +8,9 @@
         <variable constant="0" name="finish" sid="149734891975736" static="0" type="number">0</variable>
         <variable constant="0" name="endless" sid="128763826261322" static="0" type="number">0</variable>
         <variable constant="0" name="bestscore" sid="483039928027592" static="0" type="number">0</variable>
+        <variable constant="0" name="ob_speed" sid="434515776460938" static="0" type="number">800</variable>
         <variable constant="0" name="clevel" sid="351330890690067" static="0" type="number">0</variable>
+        <variable constant="0" name="sp_speed" sid="318014376252063" static="0" type="number">2</variable>
         <variable constant="0" name="mati" sid="439672650848306" static="0" type="number">0</variable>
         <variable constant="0" name="object" sid="360810709279195" static="0" type="number">0</variable>
         <variable constant="0" name="bg_speed" sid="502892786344781" static="0" type="number">650</variable>
@@ -133,7 +135,7 @@
                         <event-block sid="195129839119150">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="425733852874015" type="System">
-                                    <param id="0" name="Interval (seconds)">2</param>
+                                    <param id="0" name="Interval (seconds)">sp_speed</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -152,6 +154,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="593129848130245" type="mg_ob1">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="532961426329565">
@@ -167,6 +172,9 @@
                                             <param id="0" name="Object">mg_ob1</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="393585202545107" type="mg_ob1">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -184,6 +192,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="152423314997330" type="mg_ob1">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="901384665277602">
@@ -199,6 +210,9 @@
                                             <param id="0" name="Object">mg_ob2</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="430439337371233" type="mg_ob2">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -216,6 +230,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="419014561507607" type="mg_ob2">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="668669186739314">
@@ -231,6 +248,9 @@
                                             <param id="0" name="Object">mg_ob2</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="611064556159294" type="mg_ob2">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -248,6 +268,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="622210517415681" type="mg_ob3">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="742985966398706">
@@ -264,6 +287,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="621268709210252" type="mg_ob3">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="383724178341352">
@@ -279,6 +305,9 @@
                                             <param id="0" name="Object">mg_ob3</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="794208329979267" type="mg_ob3">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -301,6 +330,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="156604888468086" type="mg_ob4">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="458458612944669">
@@ -321,6 +353,9 @@
                                             <param id="0" name="Object">mg_ob1</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="417967794326405" type="mg_ob1">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -343,6 +378,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="580409147953087" type="mg_ob2">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="435755165872238">
@@ -364,6 +402,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="113419293849847" type="mg_ob3">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="795916336142956">
@@ -379,6 +420,9 @@
                                             <param id="0" name="Object">mg_ob5</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="999177475560688" type="mg_ob5">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -396,6 +440,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="830842839763586" type="mg_ob5">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="752260666753023">
@@ -411,6 +458,9 @@
                                             <param id="0" name="Object">mg_ob5</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="807484212500052" type="mg_ob5">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -433,6 +483,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="280544878486051" type="mg_ob5">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="651722478794875">
@@ -448,6 +501,9 @@
                                             <param id="0" name="Object">mg_ob8</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="824571969834325" type="mg_ob8">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -465,6 +521,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="775020011341330" type="mg_ob8">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="159116722720801">
@@ -480,6 +539,9 @@
                                             <param id="0" name="Object">mg_ob8</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="591876450382153" type="mg_ob8">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -497,6 +559,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="146703930654658" type="mg_ob12">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="481012401857464">
@@ -513,6 +578,9 @@
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="713706203918652" type="mg_ob12">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="611710796797543">
@@ -528,6 +596,9 @@
                                             <param id="0" name="Object">mg_ob12</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="655890172174033" type="mg_ob12">
+                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1347,6 +1418,14 @@
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="219151594334904" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">800</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="563084860450451" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="944183960339186">
@@ -1361,6 +1440,14 @@
                                                 <action id="-9" name="Set value" sid="535397036179856" type="System">
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="211953507350222" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">825</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="283582150673732" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.95</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1377,6 +1464,14 @@
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="160407477016187" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">850</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="170720974742742" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.9</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="686514705590849">
@@ -1391,6 +1486,14 @@
                                                 <action id="-9" name="Set value" sid="929195737462133" type="System">
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="717178305842118" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">875</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="578864011631392" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.85</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1407,6 +1510,14 @@
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="908514799107290" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">900</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="586240822742127" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.8</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="414996366327511">
@@ -1421,6 +1532,14 @@
                                                 <action id="-9" name="Set value" sid="688989291093154" type="System">
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="898838610009998" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">925</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="967782001298663" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.75</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1437,6 +1556,14 @@
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="321067866510766" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">950</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="487999618091477" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.7</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="271078522206969">
@@ -1451,6 +1578,14 @@
                                                 <action id="-9" name="Set value" sid="508810481665687" type="System">
                                                     <param id="0" name="Variable">object</param>
                                                     <param id="1" name="Value">round(random(1,19))</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="715706277874462" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">975</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="890929575868925" type="System">
+                                                    <param id="0" name="Variable">sp_speed</param>
+                                                    <param id="1" name="Value">1.65</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1474,6 +1609,25 @@
                                             <param id="1" name="Value">round(random(1,22))</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="236146099036915">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="351976807665468" type="System">
+                                                    <param id="0" name="Interval (seconds)">2.0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="557317852601072" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">0.5</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="777595733388855" type="System">
+                                                    <param id="0" name="Variable">ob_speed</param>
+                                                    <param id="1" name="Value">0.001</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-group>
