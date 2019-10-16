@@ -565,7 +565,7 @@
                             <properties>
                                 <speed>850</speed>
                                 <acceleration>0</acceleration>
-                                <gravity>500</gravity>
+                                <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
                                 <initial-state>Enabled</initial-state>

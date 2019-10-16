@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>3</name>
-    <sid>232405886611281</sid>
+    <sid>411706088775323</sid>
     <event-sheet>maingame</event-sheet>
     <size>
         <width>720</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background" sid="764771571963495">
+        <layer name="background" sid="860344011460258">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -72,7 +72,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="guide" sid="730299728208570">
+        <layer name="guide" sid="590823770285446">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -113,7 +113,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 0" sid="466705785751437">
+        <layer name="Layer 0" sid="486811946175350">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -565,7 +565,7 @@
                             <properties>
                                 <speed>850</speed>
                                 <acceleration>0</acceleration>
-                                <gravity>500</gravity>
+                                <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
                                 <initial-state>Enabled</initial-state>
@@ -726,7 +726,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="gameover" sid="742139822643212">
+        <layer name="gameover" sid="532994229946410">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

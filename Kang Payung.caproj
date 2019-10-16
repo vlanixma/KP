@@ -2,7 +2,7 @@
 <c2project>
     <name>Kang Payung</name>
     <description>Kang Payung</description>
-    <version>1.1.2.0</version>
+    <version>1.1.2.2</version>
     <author>Vlanixma</author>
     <author-email>vlanixma@gmail.com</author-email>
     <author-website>http://</author-website>
@@ -10,6 +10,7 @@
     <unique-id>3stfylghysnpi</unique-id>
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
@@ -61,14 +62,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501105285580942" speed="5">
-                        <frame duration="1" hotspotX="0.501484" hotspotY="0.505618" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_button.png">
-                            <collision-poly>
-                                <point x="0.017646" y="0.235511" />
-                                <point x="0.982354" y="0.235511" />
-                                <point x="0.982354" y="1" />
-                                <point x="0.0205783" y="1" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.501484" hotspotY="0.505618" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_button.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -78,10 +72,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184865660690177" speed="5">
                         <frame duration="1" hotspotX="0.501484" hotspotY="0.505618" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MM_button.png">
                             <collision-poly>
-                                <point x="0.0177161" y="0" />
-                                <point x="0.988183" y="0" />
-                                <point x="0.988183" y="0.96503" />
-                                <point x="0.0206659" y="0.96503" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.997033" y="0.988764" />
+                                <point x="0.00296736" y="0.988764" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -608,12 +602,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827351554988729" speed="5">
                         <frame duration="1" hotspotX="0.503937" hotspotY="0.504673" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mm_back.png">
                             <collision-poly>
-                                <point x="0.767364" y="0.512197" />
+                                <point x="0" y="0" />
                                 <point x="1" y="0.00934579" />
-                                <point x="1" y="0.26662" />
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
-                                <point x="0.785028" y="1" />
                                 <point x="0.00787403" y="1" />
                             </collision-poly>
                         </frame>
@@ -641,16 +633,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406786855845691" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MG_button.png">
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.807692" y="0" />
-                                <point x="1" y="0" />
-                                <point x="1" y="0.948714" />
-                                <point x="0.807692" y="0.989474" />
-                                <point x="0" y="0.948714" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\MG_button.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -700,8 +683,8 @@
                             <collision-poly>
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
-                                <point x="0.033363" y="1" />
-                                <point x="0.033363" y="0" />
+                                <point x="0" y="0.990654" />
+                                <point x="0" y="0" />
                                 <point x="1" y="0" />
                                 <point x="1" y="0" />
                             </collision-poly>
@@ -774,20 +757,12 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283483388646320" speed="5">
-                    <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mm_exit.png">
-                        <collision-poly>
-                            <point x="0.0693069" y="0.0693069" />
-                            <point x="0.49505" y="0" />
-                            <point x="0.930693" y="0.0693069" />
-                            <point x="1" y="0.49505" />
-                            <point x="0.930693" y="0.930693" />
-                            <point x="0.49505" y="0.990099" />
-                            <point x="0.0693069" y="0.930693" />
-                            <point x="0.00990099" y="0.49505" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\Vlanixma\Documents\KangPayung\Asset\mm_exit.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="705263867017462">
+            <plugin id="Browser" />
         </object-type>
     </object-folder>
     <families />
@@ -823,6 +798,7 @@
         </global-instance>
         <global-instance type="LocalStorage" uid="16" />
         <global-instance type="Function" uid="332" />
+        <global-instance type="Browser" uid="344" />
     </global-instances>
     <sounds-folder />
     <music-folder />

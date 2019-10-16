@@ -155,5 +155,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="372660458532603">
+            <conditions>
+                <condition id="17" name="On tap object" sid="314735593272969" type="Touch">
+                    <param id="0" name="Object">mm_exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="251884700047338" type="Browser" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

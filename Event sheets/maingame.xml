@@ -320,6 +320,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="156604888468086" type="mg_ob4">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="377703599523639" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob4</param>
                                             <param id="1" name="Layer">0</param>
@@ -329,9 +332,6 @@
                                             <param id="0" name="Object">mg_ob4</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action behavior="Bullet" id="0" name="Set speed" sid="156604888468086" type="mg_ob4">
-                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -344,6 +344,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="417967794326405" type="mg_ob1">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="938640214896085" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob1</param>
                                             <param id="1" name="Layer">0</param>
@@ -353,9 +356,6 @@
                                             <param id="0" name="Object">mg_ob1</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action behavior="Bullet" id="0" name="Set speed" sid="417967794326405" type="mg_ob1">
-                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -368,6 +368,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="580409147953087" type="mg_ob2">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="626444281341051" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob2</param>
                                             <param id="1" name="Layer">0</param>
@@ -377,9 +380,6 @@
                                             <param id="0" name="Object">mg_ob2</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action behavior="Bullet" id="0" name="Set speed" sid="580409147953087" type="mg_ob2">
-                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -392,6 +392,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="113419293849847" type="mg_ob3">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="721447835738511" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob3</param>
                                             <param id="1" name="Layer">0</param>
@@ -401,9 +404,6 @@
                                             <param id="0" name="Object">mg_ob3</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action behavior="Bullet" id="0" name="Set speed" sid="113419293849847" type="mg_ob3">
-                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -473,6 +473,9 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="280544878486051" type="mg_ob5">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="632773067805660" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob5</param>
                                             <param id="1" name="Layer">0</param>
@@ -482,9 +485,6 @@
                                             <param id="0" name="Object">mg_ob5</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action behavior="Bullet" id="0" name="Set speed" sid="280544878486051" type="mg_ob5">
-                                            <param id="0" name="Speed">ob_speed</param>
                                         </action>
                                     </actions>
                                 </event-block>
