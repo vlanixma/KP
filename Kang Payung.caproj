@@ -2,7 +2,7 @@
 <c2project>
     <name>Kang Payung</name>
     <description>Kang Payung</description>
-    <version>1.1.2.2</version>
+    <version>1.1.2.5</version>
     <author>Vlanixma</author>
     <author-email>vlanixma@gmail.com</author-email>
     <author-website>http://</author-website>
@@ -10,6 +10,7 @@
     <unique-id>3stfylghysnpi</unique-id>
     <saved-with-version>26900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
@@ -764,6 +765,9 @@
         <object-type name="Browser" sid="705263867017462">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="Audio" sid="594800049001552">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -799,8 +803,24 @@
         <global-instance type="LocalStorage" uid="16" />
         <global-instance type="Function" uid="332" />
         <global-instance type="Browser" uid="344" />
+        <global-instance type="Audio" uid="345">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="button.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

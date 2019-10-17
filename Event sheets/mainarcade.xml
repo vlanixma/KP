@@ -69,6 +69,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="440331404309752" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-25" name="Go to layout (by name)" sid="566388621828487" type="System">
                     <param id="0" name="Layout">str(MA_btn_level_lo.lev)</param>
                 </action>
@@ -93,6 +99,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="455119545798255" type="Audio">
+                    <param id="0" name="Audio file">button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-25" name="Go to layout (by name)" sid="119399277094333" type="System">
                     <param id="0" name="Layout">&quot;mainmenu&quot;</param>
                 </action>

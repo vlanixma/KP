@@ -981,6 +981,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="126152456412740" type="Audio">
+                                            <param id="0" name="Audio file">button</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">100</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-25" name="Go to layout (by name)" sid="149733034699526" type="System">
                                             <param id="0" name="Layout">&quot;mainmenu&quot;</param>
                                         </action>
@@ -993,6 +999,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="315828894035622" type="Audio">
+                                            <param id="0" name="Audio file">button</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">100</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-25" name="Go to layout (by name)" sid="770932977719800" type="System">
                                             <param id="0" name="Layout">&quot;maingame&quot;</param>
                                         </action>
@@ -1043,6 +1055,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="677970730186162" type="Audio">
+                                            <param id="0" name="Audio file">button</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">100</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-2" name="Go to layout" sid="937344812088339" type="System">
                                             <param id="0" name="Layout">mainarcade</param>
                                         </action>
@@ -1055,6 +1073,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="572396679702674" type="Audio">
+                                            <param id="0" name="Audio file">button</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">100</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-25" name="Go to layout (by name)" sid="624339387684279" type="System">
                                             <param id="0" name="Layout">&quot;maingame&quot;</param>
                                         </action>
@@ -1067,6 +1091,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="116965345847074" type="Audio">
+                                            <param id="0" name="Audio file">button</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">100</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-25" name="Go to layout (by name)" sid="267320291046602" type="System">
                                             <param id="0" name="Layout">str(clevel)</param>
                                         </action>
