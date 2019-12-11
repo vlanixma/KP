@@ -3,49 +3,64 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>maingame</name>
     <events>
-        <variable constant="0" name="kebal" sid="160750083642256" static="0" type="number">0</variable>
-        <variable constant="0" name="escore" sid="767351434939879" static="0" type="number">0</variable>
-        <variable constant="0" name="finish" sid="149734891975736" static="0" type="number">0</variable>
-        <variable constant="0" name="endless" sid="128763826261322" static="0" type="number">0</variable>
-        <variable constant="0" name="bestscore" sid="483039928027592" static="0" type="number">0</variable>
-        <variable constant="0" name="ob_speed" sid="434515776460938" static="0" type="number">800</variable>
-        <variable constant="0" name="clevel" sid="351330890690067" static="0" type="number">0</variable>
-        <variable constant="0" name="sp_speed" sid="318014376252063" static="0" type="number">2</variable>
-        <variable constant="0" name="mati" sid="439672650848306" static="0" type="number">0</variable>
-        <variable constant="0" name="object" sid="360810709279195" static="0" type="number">0</variable>
-        <variable constant="0" name="bg_speed" sid="502892786344781" static="0" type="number">650</variable>
-        <variable constant="0" name="blevel" sid="811719852980928" static="0" type="number">0</variable>
-        <variable constant="0" name="score" sid="800981321016740" static="0" type="number">0</variable>
+        <variable constant="0" name="touch_x" sid="167000152781529" static="0" type="number">0</variable>
+        <variable comment="kondisi player saat mendapatkan item merah" constant="0" name="kebal" sid="160750083642256" static="0" type="number">0</variable>
+        <variable comment="mode finish setelah menyelesaikan 1 level" constant="0" name="finish" sid="149734891975736" static="0" type="number">0</variable>
+        <variable comment="mode endless" constant="0" name="endless" sid="128763826261322" static="0" type="number">0</variable>
+        <variable comment="score terbaik" constant="0" name="bestscore" sid="483039928027592" static="0" type="number">0</variable>
+        <variable comment="kecepatan object meluncur" constant="0" name="ob_speed" sid="434515776460938" static="0" type="number">800</variable>
+        <variable comment="level saat ini yang dimainkan" constant="0" name="clevel" sid="351330890690067" static="0" type="number">0</variable>
+        <variable comment="kecepatan spawn obstacle" constant="0" name="sp_speed" sid="318014376252063" static="0" type="number">2</variable>
+        <variable comment="kondisi player mati atau tidak" constant="0" name="mati" sid="439672650848306" static="0" type="number">0</variable>
+        <variable comment="object id" constant="0" name="object" sid="360810709279195" static="0" type="number">0</variable>
+        <variable comment="kecepatan gerak gambar background" constant="0" name="bg_speed" sid="502892786344781" static="0" type="number">650</variable>
+        <variable comment="score realtime" constant="0" name="score" sid="800981321016740" static="0" type="number">0</variable>
+        <event-block sid="809835418024492">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="584039173057663" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set speed" sid="207759124262160" type="bg_belakang">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="475340295902262" type="bg_belakang">
+                    <param id="0" name="Frame number">choose(0,1,2)</param>
+                </action>
+                <action id="-5" name="Scroll to X" sid="543739484400984" type="System">
+                    <param id="0" name="X">360</param>
+                </action>
+                <action id="-6" name="Scroll to Y" sid="519663199120266" type="System">
+                    <param id="0" name="Y">640</param>
+                </action>
+                <action id="-2" name="Set Y" sid="887373758684274" type="mg_player">
+                    <param id="0" name="Y">-200</param>
+                </action>
+                <action id="-9" name="Set value" sid="233166865890270" type="System">
+                    <param id="0" name="Variable">mati</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="273082473111326" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="967256137596075" type="System">
+                    <param id="0" name="Variable">finish</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="150483382499074" type="System">
+                    <param id="0" name="Variable">kebal</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="6" name="Set speed" sid="300457169104872" type="mg_player">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="340905109351061" type="mg_tutor">
+                    <param id="0" name="Y">-200</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="843723753698517" title="Background">
             <sub-events>
-                <event-block sid="809835418024492">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="584039173057663" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-5" name="Scroll to X" sid="543739484400984" type="System">
-                            <param id="0" name="X">360</param>
-                        </action>
-                        <action id="-6" name="Scroll to Y" sid="519663199120266" type="System">
-                            <param id="0" name="Y">640</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="887373758684274" type="mg_player">
-                            <param id="0" name="Y">-200</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="233166865890270" type="System">
-                            <param id="0" name="Variable">mati</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="273082473111326" type="System">
-                            <param id="0" name="Variable">score</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="967256137596075" type="System">
-                            <param id="0" name="Variable">finish</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="173693519414969">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="236866529199055" type="System" />
@@ -56,6 +71,12 @@
                         </action>
                         <action id="-2" name="Set Y" sid="966940917558700" type="mg_player">
                             <param id="0" name="Y">Self.Y + (380 - Self.Y) / 30</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="102987212988828" type="bg_belakang">
+                            <param id="0" name="Y">Self.Y + (-320 - Self.Y)/5000</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="102842989009536" type="mg_tutor">
+                            <param id="0" name="Y">Self.Y + (550 - Self.Y) / 20</param>
                         </action>
                     </actions>
                 </event-block>
@@ -70,6 +91,18 @@
                         <action id="-2" name="Set Y" sid="793227701339345" type="mg_background">
                             <param id="0" name="Y">mg_background.Y + 3200</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="877286789241806">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="206766640833076" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="139099410373205" type="mg_tutor" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -96,19 +129,31 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="200136943608315">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="402066172800908" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="437598102584877" type="System">
+                                    <param id="0" name="Variable">touch_x</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="350342492852523">
                     <conditions>
                         <condition id="-1" name="Compare X" sid="800894791685908" type="mg_player">
                             <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">400</param>
+                            <param id="1" name="X co-ordinate">touch_x</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="714473728682059" type="mg_player">
-                            <param id="0" name="Animation">&quot;kiwo&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="7" name="Set mirrored" sid="857052658164917" type="mg_player">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -116,13 +161,12 @@
                     <conditions>
                         <condition id="-1" name="Compare X" sid="347574808053680" type="mg_player">
                             <param id="0" name="Comparison">4</param>
-                            <param id="1" name="X co-ordinate">400</param>
+                            <param id="1" name="X co-ordinate">touch_x</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="985567703864895" type="mg_player">
-                            <param id="0" name="Animation">&quot;tengen&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="7" name="Set mirrored" sid="243769138858825" type="mg_player">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -151,7 +195,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="514825672390453" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob1</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="593129848130245" type="mg_ob1">
@@ -170,7 +214,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="713246641481370" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob1</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="393585202545107" type="mg_ob1">
@@ -189,7 +233,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="854676555344892" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob1</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="152423314997330" type="mg_ob1">
@@ -208,7 +252,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="583269314858480" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob2</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="430439337371233" type="mg_ob2">
@@ -227,7 +271,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="234584575050721" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob2</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="419014561507607" type="mg_ob2">
@@ -246,7 +290,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="689135522113624" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob2</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="611064556159294" type="mg_ob2">
@@ -265,7 +309,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="296582722512800" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob3</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="622210517415681" type="mg_ob3">
@@ -284,7 +328,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="478517097610590" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob3</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="621268709210252" type="mg_ob3">
@@ -303,7 +347,7 @@
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="680854436195448" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob3</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="794208329979267" type="mg_ob3">
@@ -325,12 +369,12 @@
                                         </action>
                                         <action id="0" name="Spawn another object" sid="377703599523639" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob4</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="335587674097127" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob4</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -349,12 +393,12 @@
                                         </action>
                                         <action id="0" name="Spawn another object" sid="938640214896085" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob1</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="639480273400798" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob1</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -373,12 +417,12 @@
                                         </action>
                                         <action id="0" name="Spawn another object" sid="626444281341051" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob2</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="717799844946373" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob2</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -388,7 +432,7 @@
                                         <condition id="-14" name="Compare variable" sid="842972401815287" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">12</param>
+                                            <param id="2" name="Value">13</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -397,12 +441,12 @@
                                         </action>
                                         <action id="0" name="Spawn another object" sid="721447835738511" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob3</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="140527090790427" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob3</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -412,13 +456,13 @@
                                         <condition id="-14" name="Compare variable" sid="137144339705683" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">13</param>
+                                            <param id="2" name="Value">14</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="177803278738829" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob5</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="999177475560688" type="mg_ob5">
@@ -431,13 +475,13 @@
                                         <condition id="-14" name="Compare variable" sid="543765033528949" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">14</param>
+                                            <param id="2" name="Value">15</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="735692805420695" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob5</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="830842839763586" type="mg_ob5">
@@ -450,13 +494,13 @@
                                         <condition id="-14" name="Compare variable" sid="223390787408749" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">15</param>
+                                            <param id="2" name="Value">16</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="376376129892078" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob5</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="807484212500052" type="mg_ob5">
@@ -469,7 +513,7 @@
                                         <condition id="-14" name="Compare variable" sid="892090418039387" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">16</param>
+                                            <param id="2" name="Value">17</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -478,12 +522,12 @@
                                         </action>
                                         <action id="0" name="Spawn another object" sid="632773067805660" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob5</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="699903524798770" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob5</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -493,13 +537,13 @@
                                         <condition id="-14" name="Compare variable" sid="720532854867406" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">17</param>
+                                            <param id="2" name="Value">18</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="921209610727756" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob8</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="824571969834325" type="mg_ob8">
@@ -512,13 +556,13 @@
                                         <condition id="-14" name="Compare variable" sid="496163546645999" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">18</param>
+                                            <param id="2" name="Value">19</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="376923994376397" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob8</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="775020011341330" type="mg_ob8">
@@ -531,13 +575,13 @@
                                         <condition id="-14" name="Compare variable" sid="497273081396742" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">19</param>
+                                            <param id="2" name="Value">20</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="187925538049191" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob8</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="591876450382153" type="mg_ob8">
@@ -550,13 +594,13 @@
                                         <condition id="-14" name="Compare variable" sid="155484983722438" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">20</param>
+                                            <param id="2" name="Value">21</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="749748394322796" type="mg_spawnc">
                                             <param id="0" name="Object">mg_ob12</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="146703930654658" type="mg_ob12">
@@ -569,13 +613,13 @@
                                         <condition id="-14" name="Compare variable" sid="473350492756606" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">21</param>
+                                            <param id="2" name="Value">22</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="386566903782278" type="mg_spawnl">
                                             <param id="0" name="Object">mg_ob12</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="713706203918652" type="mg_ob12">
@@ -588,17 +632,341 @@
                                         <condition id="-14" name="Compare variable" sid="917960534782247" type="System">
                                             <param id="0" name="Variable">object</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">22</param>
+                                            <param id="2" name="Value">23</param>
                                         </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="829424144119517" type="mg_spawnr">
                                             <param id="0" name="Object">mg_ob12</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="655890172174033" type="mg_ob12">
                                             <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="318724964575892">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="778816059464899" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">24</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="604263653581532" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="769180992212805" type="mg_ob15">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="744440867242676">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="825746845004625" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">25</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="938495836563815" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="713944581535618" type="mg_ob15">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="737180847658550">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="124988819617043" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">26</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="628711723918586" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="610122169618064" type="mg_ob15">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="426706299651932">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="899326125730289" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">27</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="248236513996548" type="mg_ob15">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="293268234207185" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="202062655069570" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="356813441901715">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="588599113782320" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">28</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="873672278625426" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="155082100946875" type="mg_ob16">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="118309388590946">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="481720678488806" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">29</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="233074563856366" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="384276086421717" type="mg_ob16">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="246089936170043">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="403785752756645" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">30</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="479811903969962" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="881430726468062" type="mg_ob16">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="557155514212360">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="606121343954828" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">31</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="735705336923979" type="mg_ob16">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="829647250664972" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="550586269687350" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="922013662156407">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="490195601301283" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="231792772699644" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="973753157657749" type="mg_ob17">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="633625278369447">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="472252781226774" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">33</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="234209157815353" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="287842059588997" type="mg_ob17">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="103969495177200">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="292838257221124" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">34</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="632928207554910" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="671694393979553" type="mg_ob17">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="721429533842589">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="419673872446813" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">35</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="922505054748046" type="mg_ob17">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="276381914461485" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="896045087049171" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="939412218246433">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="867349173524910" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">36</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="641897255667094" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="630760107938570" type="mg_ob18">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="589196968833610">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="247982606043035" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="530167754969460" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="864615623442892" type="mg_ob18">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="448390598848599">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="764424273766062" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="297010992831750" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="274640444510678" type="mg_ob18">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="191637247502467">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="448978621405461" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="649162459631712" type="mg_ob18">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="195409473937537" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="446886094234607" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -688,19 +1056,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="216514426697300">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="133794527739819" type="mg_player">
-                                            <param id="0" name="Object">mg_ob7</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="916634160759004" type="Function">
-                                            <param id="0" name="Name">&quot;kebal&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                                 <event-block sid="111972941528692">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="192805937196565" type="mg_player">
@@ -709,45 +1064,6 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Call function" sid="331588605684096" type="Function">
-                                            <param id="0" name="Name">&quot;kebal&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="274323474586276">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="226437875197599" type="mg_player">
-                                            <param id="0" name="Object">mg_ob9</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="668459997584660" type="Function">
-                                            <param id="0" name="Name">&quot;kebal&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="402592772394812">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="562823972538825" type="mg_player">
-                                            <param id="0" name="Object">mg_ob10</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="755147553451122" type="Function">
-                                            <param id="0" name="Name">&quot;kebal&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="432227288283899">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="545545909287625" type="mg_player">
-                                            <param id="0" name="Object">mg_ob11</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="937391574572264" type="Function">
                                             <param id="0" name="Name">&quot;kebal&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
@@ -778,6 +1094,48 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="472556188118960" type="mg_ob12" />
+                                        <action id="5" name="Set frame" sid="314461707120570" type="mg_player">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="860355654034578">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="612236736202135" type="mg_player">
+                                            <param id="0" name="Object">mg_ob15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="971638890415351" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="616533844779860">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="957288981346367" type="mg_player">
+                                            <param id="0" name="Object">mg_ob16</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="838322338890525" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="241995116705327">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="642197933895538" type="mg_player">
+                                            <param id="0" name="Object">mg_ob17</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="484593793173075" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -844,16 +1202,6 @@
                                         <action id="-9" name="Destroy" sid="462396582526328" type="mg_ob6" />
                                     </actions>
                                 </event-block>
-                                <event-block sid="535589938763603">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="767254224544206" type="mg_ob7">
-                                            <param id="0" name="Object">mg_end</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="562859083812966" type="mg_ob7" />
-                                    </actions>
-                                </event-block>
                                 <event-block sid="111042308756318">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="138782203491265" type="mg_ob8">
@@ -864,36 +1212,6 @@
                                         <action id="-9" name="Destroy" sid="332417638173045" type="mg_ob8" />
                                     </actions>
                                 </event-block>
-                                <event-block sid="995231532520397">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="500298106833237" type="mg_ob9">
-                                            <param id="0" name="Object">mg_end</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="117949080021851" type="mg_ob9" />
-                                    </actions>
-                                </event-block>
-                                <event-block sid="812774332366030">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="911982501095039" type="mg_ob10">
-                                            <param id="0" name="Object">mg_end</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="176273863760598" type="mg_ob10" />
-                                    </actions>
-                                </event-block>
-                                <event-block sid="659668442422399">
-                                    <conditions>
-                                        <condition id="0" name="On collision with another object" sid="206028691290337" type="mg_ob11">
-                                            <param id="0" name="Object">mg_end</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="358631104612073" type="mg_ob11" />
-                                    </actions>
-                                </event-block>
                                 <event-block sid="991037323157029">
                                     <conditions>
                                         <condition id="0" name="On collision with another object" sid="495492517362402" type="mg_ob12">
@@ -902,6 +1220,46 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="269363095739608" type="mg_ob12" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="614931264176014">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="226995100826084" type="mg_ob15">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="335370418476012" type="mg_ob15" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="799116474590925">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="107051662404317" type="mg_ob16">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="149256454937688" type="mg_ob16" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="575123089321271">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="485543053188618" type="mg_ob17">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="137802260242453" type="mg_ob17" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="561029830725627">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="660172379923850" type="mg_ob18">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="187352627208353" type="mg_ob18" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -972,6 +1330,7 @@
                                 </action>
                                 <action id="-9" name="Destroy" sid="884300432969012" type="mg_victory" />
                                 <action id="-9" name="Destroy" sid="415707502158231" type="mg_next" />
+                                <action id="-9" name="Destroy" sid="615258684162279" type="mg_victoryf" />
                             </actions>
                             <sub-events>
                                 <event-block sid="497567297865789">
@@ -1636,7 +1995,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="289904802068179" type="System">
                                             <param id="0" name="Variable">object</param>
-                                            <param id="1" name="Value">round(random(1,22))</param>
+                                            <param id="1" name="Value">int(round(random(1,39)))</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -1791,11 +2150,14 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-16" name="Wait" sid="316637785845323" type="System">
-                    <param id="0" name="Seconds">5</param>
+                    <param id="0" name="Seconds">10</param>
                 </action>
                 <action id="-9" name="Set value" sid="235102449792784" type="System">
                     <param id="0" name="Variable">kebal</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="291483657577872" type="mg_player">
+                    <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
         </event-block>

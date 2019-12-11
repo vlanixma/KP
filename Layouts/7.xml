@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>7</name>
-    <sid>814951366035079</sid>
+    <sid>367697907302715</sid>
     <event-sheet>maingame</event-sheet>
     <size>
         <width>720</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="background" sid="742274555985653">
+        <layer name="background" sid="590093919170509">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="mg_background" uid="245">
+                <instance type="mg_background" uid="224">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_background" uid="246">
+                <instance type="mg_background" uid="225">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -72,7 +72,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="guide" sid="991795283122151">
+        <layer name="guide" sid="332510381759782">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -88,7 +88,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Guide" uid="247">
+                <instance type="Guide" uid="226">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -113,7 +113,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 0" sid="542779088120446">
+        <layer name="Layer 0" sid="600950681093370">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -129,7 +129,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="mg_player" uid="248">
+                <instance type="mg_player" uid="227">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -142,16 +142,16 @@
                         <x>360</x>
                         <y>380</y>
                         <z>0</z>
-                        <width>93.026046753</width>
-                        <height>268.741912842</height>
+                        <width>160.515533447</width>
+                        <height>458.442077637</height>
                         <depth>0</depth>
-                        <hotspotX>0.503268003</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_border" uid="249">
+                <instance type="mg_border" uid="228">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -173,7 +173,7 @@
                         <opacity>0.25</opacity>
                     </world>
                 </instance>
-                <instance type="mg_border" uid="250">
+                <instance type="mg_border" uid="229">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -195,7 +195,7 @@
                         <opacity>0.25</opacity>
                     </world>
                 </instance>
-                <instance type="mg_spawnl" uid="251">
+                <instance type="mg_spawnl" uid="230">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -217,7 +217,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_spawnc" uid="252">
+                <instance type="mg_spawnc" uid="231">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -239,7 +239,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_spawnr" uid="253">
+                <instance type="mg_spawnr" uid="232">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -261,7 +261,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob1" uid="254">
+                <instance type="mg_ob1" uid="233">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -295,7 +295,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_end" uid="255">
+                <instance type="mg_end" uid="234">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -317,7 +317,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_score" uid="256">
+                <instance type="mg_score" uid="235">
                     <properties>
                         <character-width>84</character-width>
                         <character-height>90</character-height>
@@ -349,7 +349,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob2" uid="257">
+                <instance type="mg_ob2" uid="236">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -383,7 +383,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob3" uid="258">
+                <instance type="mg_ob3" uid="237">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -417,7 +417,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob4" uid="259">
+                <instance type="mg_ob4" uid="238">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -451,7 +451,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob5" uid="260">
+                <instance type="mg_ob5" uid="239">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -485,7 +485,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob6" uid="261">
+                <instance type="mg_ob6" uid="240">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -519,41 +519,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob7" uid="262">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>850</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1350</x>
-                        <y>416</y>
-                        <z>0</z>
-                        <width>127</width>
-                        <height>124</height>
-                        <depth>0</depth>
-                        <hotspotX>1</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="mg_ob8" uid="263">
+                <instance type="mg_ob8" uid="241">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -587,109 +553,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_ob9" uid="264">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>800</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>855</x>
-                        <y>800</y>
-                        <z>0</z>
-                        <width>65.726707458</width>
-                        <height>262.906829834</height>
-                        <depth>0</depth>
-                        <hotspotX>1</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="mg_ob10" uid="265">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>400</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>945</x>
-                        <y>768</y>
-                        <z>0</z>
-                        <width>90</width>
-                        <height>192</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0.125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="mg_ob11" uid="266">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>400</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1080</x>
-                        <y>928</y>
-                        <z>0</z>
-                        <width>90</width>
-                        <height>192</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0.875</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="mg_ob12" uid="267">
+                <instance type="mg_ob12" uid="242">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -714,11 +578,11 @@
                         <x>1070.832763672</x>
                         <y>636.832824707</y>
                         <z>0</z>
-                        <width>53.665630341</width>
-                        <height>53.665630341</height>
+                        <width>63.674694061</width>
+                        <height>32.582706451</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.501672268</hotspotX>
+                        <hotspotY>0.496732026</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -726,7 +590,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="gameover" sid="722454841163520">
+        <layer name="gameover" sid="541555559278098">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -742,7 +606,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="mg_gameover" uid="268">
+                <instance type="mg_gameover" uid="243">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -764,7 +628,7 @@
                         <opacity>0.75</opacity>
                     </world>
                 </instance>
-                <instance type="mg_mainmenu" uid="269">
+                <instance type="mg_mainmenu" uid="244">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -786,7 +650,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_retry" uid="270">
+                <instance type="mg_retry" uid="245">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -808,7 +672,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_score_end" uid="271">
+                <instance type="mg_score_end" uid="246">
                     <properties>
                         <character-width>84</character-width>
                         <character-height>90</character-height>
@@ -840,7 +704,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_bestscore_end" uid="272">
+                <instance type="mg_bestscore_end" uid="247">
                     <properties>
                         <character-width>84</character-width>
                         <character-height>90</character-height>
@@ -872,7 +736,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_score_end_var" uid="273">
+                <instance type="mg_score_end_var" uid="248">
                     <properties>
                         <character-width>84</character-width>
                         <character-height>90</character-height>
@@ -904,7 +768,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_bestscore_end_var" uid="274">
+                <instance type="mg_bestscore_end_var" uid="249">
                     <properties>
                         <character-width>84</character-width>
                         <character-height>90</character-height>
@@ -936,7 +800,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_victory" uid="275">
+                <instance type="mg_victory" uid="250">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -958,7 +822,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mg_next" uid="276">
+                <instance type="mg_next" uid="251">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -976,6 +840,38 @@
                         <depth>0</depth>
                         <hotspotX>0.496062994</hotspotX>
                         <hotspotY>0.504672885</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="mg_victoryf" uid="252">
+                    <properties>
+                        <character-width>84</character-width>
+                        <character-height>90</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>VICTORY</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,31,1],&quot;&quot;data&quot;&quot;:[[[13],[21],[22],[24],[27],[28],[31],[32],[33],[34],[35],[37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[49],[50],[52],[56],[57],[59],[61],[82]],[[&quot;&quot;|&quot;&quot;],[&quot;&quot;[]&quot;&quot;],[&quot;&quot;`&quot;&quot;],[&quot;&quot;.&quot;&quot;],[&quot;&quot;°&quot;&quot;],[&quot;&quot;Ii:&apos;&quot;&quot;],[&quot;&quot;,-+&quot;&quot;],[&quot;&quot;1&quot;&quot;],[&quot;&quot;=&quot;&quot;],[&quot;&quot;Ll&quot;&quot;],[&quot;&quot;;&quot;&quot;],[&quot;&quot;\\*&quot;&quot;],[&quot;&quot;Tt_&lt;&gt;&quot;&quot;],[&quot;&quot;!£&quot;&quot;],[&quot;&quot;EFJSefjs7?()$€&quot;&quot;],[&quot;&quot;5&quot;&quot;],[&quot;&quot;Vv~&quot;&quot;],[&quot;&quot;CYcy346&quot;&quot;],[&quot;&quot;BDPRbdpr&quot;&quot;],[&quot;&quot;Uu&quot;&quot;],[&quot;&quot;AGHKaghk2\&quot;&quot;&quot;&quot;],[&quot;&quot;Oo09&quot;&quot;],[&quot;&quot;NQZnqz&quot;&quot;],[&quot;&quot;8&quot;&quot;],[&quot;&quot;Xx&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;Ww&quot;&quot;],[&quot;&quot;#/&quot;&quot;],[&quot;&quot;Mm&quot;&quot;],[&quot;&quot;%&quot;&quot;],[&quot;&quot;@&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360</x>
+                        <y>292</y>
+                        <z>0</z>
+                        <width>292</width>
+                        <height>92</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
