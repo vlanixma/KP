@@ -2,7 +2,7 @@
 <c2project>
     <name>Kang Payung</name>
     <description>Kang Payung</description>
-    <version>1.1.3.0</version>
+    <version>1.1.3.5</version>
     <author>Vlanixma</author>
     <author-email>vlanixma@gmail.com</author-email>
     <author-website>http://</author-website>
@@ -913,6 +913,30 @@
                             <point x="0.227778" y="0.5" />
                             <point x="0.347222" y="0.254065" />
                             <point x="0.5" y="0.105691" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mg_ob19" sid="961586677298541">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="793014265772490">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="775359294054150" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.500888" original-source="C:\Users\Vlanixma\Documents\Skripsi\cobacoba\Asset\Gold_21.png">
+                        <collision-poly>
+                            <point x="0.852837" y="0.147425" />
+                            <point x="1" y="0.499112" />
+                            <point x="0.852837" y="0.852575" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147163" y="0.852575" />
+                            <point x="0.00177306" y="0.499112" />
+                            <point x="0.147163" y="0.147425" />
+                            <point x="0.5" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>

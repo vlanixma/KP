@@ -970,6 +970,63 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="907259390240189">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="737972216351559" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="308881441419858" type="mg_spawnc">
+                                            <param id="0" name="Object">mg_ob19</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="309716417845962" type="mg_ob19">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="372323002064628">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="229661323895552" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">41</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="706843167651331" type="mg_spawnl">
+                                            <param id="0" name="Object">mg_ob19</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="646922573872069" type="mg_ob19">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="876767846381762">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="953049460651284" type="System">
+                                            <param id="0" name="Variable">object</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">42</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="837665279524491" type="mg_spawnr">
+                                            <param id="0" name="Object">mg_ob19</param>
+                                            <param id="1" name="Layer">&quot;main&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="501502002035438" type="mg_ob19">
+                                            <param id="0" name="Speed">ob_speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
@@ -1138,6 +1195,33 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="761954495162212">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="891433301717482" type="mg_player">
+                                            <param id="0" name="Object">mg_ob18</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="265920544970461" type="Function">
+                                            <param id="0" name="Name">&quot;kebal&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="629581778532675">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="564298517712145" type="mg_player">
+                                            <param id="0" name="Object">mg_ob19</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="981910636808141" type="System">
+                                            <param id="0" name="Variable">score</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="953875048139246" type="mg_ob19" />
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                         <event-group description="" sid="745370891745739" title="object end">
@@ -1260,6 +1344,16 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="187352627208353" type="mg_ob18" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="110294370895272">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="872039727658947" type="mg_ob19">
+                                            <param id="0" name="Object">mg_end</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="387161930041177" type="mg_ob19" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -1805,7 +1899,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="189491779835708" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="219151594334904" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1828,7 +1922,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="535397036179856" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="211953507350222" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1851,7 +1945,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="184807830858832" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="160407477016187" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1874,7 +1968,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="929195737462133" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="717178305842118" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1897,7 +1991,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="247687503984359" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,36,37,38,39,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="908514799107290" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1920,7 +2014,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="688989291093154" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,39,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="898838610009998" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1943,7 +2037,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="876590752595865" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,38,39,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="321067866510766" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1966,7 +2060,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="508810481665687" type="System">
                                                     <param id="0" name="Variable">object</param>
-                                                    <param id="1" name="Value">round(random(1,19))</param>
+                                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42)</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="715706277874462" type="System">
                                                     <param id="0" name="Variable">ob_speed</param>
@@ -1995,7 +2089,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="289904802068179" type="System">
                                             <param id="0" name="Variable">object</param>
-                                            <param id="1" name="Value">int(round(random(1,39)))</param>
+                                            <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42)</param>
                                         </action>
                                     </actions>
                                     <sub-events>
